@@ -8,34 +8,20 @@
     </head>
 
     <body>
-        <form name="formular" action="" class="box">
-            <h1>Přilož kartu!</h1>
-        <input id="input1" type="password" name="policko" autofocus>
-        </form>
 
-        Kód karty:
-        <script>
-            // var data=document.getElementById
-            // ("policko");
-            // document.write(data);
-           
-            // function gotouser(userID) {
-            // if (userID == "1111") {
-            //     window.location = "users/user1.html";
-            //     } else {
-            // document.write("Podle kompjůtru neexistuješ!");
-            //    }
-            
-            function gotouser(val) {
-                alert("ffffffffffff " + val);
-            }
-            function Redirect() {
-               console.log(window.location)
-                window.location.href="https://www.tutorialspoint.com";
-                return false;
-            }
-            document.querySelector("#input1").addEventListener("change",Redirect)
         
+        <h1>Přilož kartu!</h1>
+        <input type="password" name="policko" autofocus onkeypress="gotouser(this.value)">
+       
+ 
+        Kód karty:
+        <script>            
+            function gotouser(val) {
+                if (event.keyCode == 13) {
+                    window.location.href="users/user"+val+".html";
+                }
+            }
+
         </script>
 
     </body>
