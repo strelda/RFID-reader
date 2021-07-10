@@ -1,2 +1,2 @@
 # RFID-reader
-loadig users using RFID
+loading users using RFID
