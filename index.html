@@ -3,29 +3,74 @@
 <html lang="cs">
 
     <head>
+        <meta charset="utf-8">
         <title>NEW WORLD ORDER BANK</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
 
+        <div class="flex-container"> 
+            <h1>Přilož kartu!</h1>
+            <input type="password" name="policko" autofocus onkeypress="goToUser(dict[this.value])">
+
+        </div>
+        <!-- <div id="test"></div> -->
+
         
-        <h1>Přilož kartu!</h1>
-        <input type="password" name="policko" autofocus onkeypress="gotouser(this.value)">
-       
- 
-        Kód karty:
-        <script>            
-            function gotouser(val) {
+        <script>   
+        "use strict";         
+            function goToUser(val) {
                 if (event.keyCode == 13) {
-                    window.location.href="users/user"+val+".html";
+                    window.location.href="users/"+val+".html";
                 }
             }
+            
+            const dict = {
+                    "eer": "OndraTalir",
+                    "eue": "OndryMamka"
+                };
+  
+            // const dict1 = fetch("idToUser.json")
+            //     .then(response => response.json())
+            //     .then(data => {
+            //         console.log(data)
+            //     })
 
+            // fetch("idToUser.json")
+            //     // .then(response => response.json())
+            //     .then(response => {
+            //         console.log(response);
+            //         return response.json();
+            //     })
+            //     .then(response => {
+            //         console.log(response);
+            //     })
+            //     .then(json => {
+            //         console.log(json);
+            //         document.getElementById('test').innerHTML=json["eer"];
+            //     })
+            // data1 = response.json();
+            // document.getElementById('test').innerHTML=data1["eer"];
+            // let jsondata;    
+                
+            // fetch("idToUser.json")
+            //     .then(function (response) {
+            //         return response.json();
+            //     })
+            //     .then(function (data) {
+            //         appendData(data);
+            //     })
+            //     .catch(function (err) {
+            //         console.log(err);
+            //     });
+            // document.getElementById('test').innerHTML=jsondata
+
+            
         </script>
 
     </body>
 
-    
 
 </html>
+
