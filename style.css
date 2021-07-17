@@ -1,3 +1,7 @@
+p { 
+    color: #ffffff; 
+    font-size: 30px;
+  }  
 h1 {
     color:rgb(255, 255, 255);
     font-family: sans-serif;
@@ -7,8 +11,32 @@ h1 {
 body {
     background-color: rgb(0, 0, 0);
 }
-.flex-container {
+.border {
+    border-width: 5px;   
+    border-color: rgb(0, 255, 100);   
+    border-style: dotted } 
+.flex {
     flex-wrap: nowrap;
     text-align: center;
+}
+.flex-id {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    border: 5px solid rgb(0, 255,100);
+    align-items: initial;
+    
+}
+.flex-text {
+    display: flex;
+    line-height: 10px;
+    font-size: 30px;
+    margin: 5px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
   }
-  
+

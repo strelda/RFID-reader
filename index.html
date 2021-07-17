@@ -10,7 +10,7 @@
 
     <body>
 
-        <div class="flex-container"> 
+        <div class="flex"> 
             <h1>Přilož kartu!</h1>
             <input type="password" name="policko" autofocus onkeypress="goToUser(dict[this.value])">
 
@@ -31,14 +31,8 @@
                     "eue": "OndryMamka"
                 };
   
-            // const dict1 = fetch("idToUser.json")
+            // const dict = fetch("idToUser.json")
             //     .then(response => response.json())
-            //     .then(data => {
-            //         console.log(data)
-            //     })
-
-            // fetch("idToUser.json")
-            //     // .then(response => response.json())
             //     .then(response => {
             //         console.log(response);
             //         return response.json();
@@ -46,6 +40,8 @@
             //     .then(response => {
             //         console.log(response);
             //     })
+            //     .catch(function() {
+            //     });
             //     .then(json => {
             //         console.log(json);
             //         document.getElementById('test').innerHTML=json["eer"];
