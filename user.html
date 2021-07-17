@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- go back after 15 seconds -->
+<meta http-equiv="refresh" content="15;url=index.html" />
+
+<html lang="cs">
+
+    <head>
+        <meta charset="utf-8">
+        <title>NEW WORLD ORDER BANK</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <div class="flex-id">
+            <div class="flex-text">
+                <p><b>Jméno:      </b> <span id="name1"></span></p>
+                <p><b>Příjmení:   </b> <span id="name2"></p>
+                <p><b>Věk:        </b> <span id="age"></p>
+                <p><b>Stav konta: </b> <span id="status"></span> $</p>
+                <p><b>Služba:     </b> <span id="slavery"></p>
+                <p><b>Special:    </b> <span id="special"></p>
+                <p><b>Úroveň:     </b> <span id="level"></p>
+            </div>
+            <div>
+                <img id=someImage class="border">
+
+
+            </div> 
+        <p>
+        </div>
+        <input type="password" id="name" autofocus onkeypress=goToUser(dict[this.value])>
+
+        
+    <!-- <script src="userFunctions.js"></script> -->
+    <script src="functions.js"></script>
+    <script>
+        const id = sessionStorage.getItem('NAME');
+        const nameC = dict[id]
+        const userData = users[nameC]
+
+        // loading profile image
+        function getImagePath(){
+            return "profilePhotos/"+nameC+".jpg";
+        }
+        document.getElementById('someImage').src=getImagePath();
+
+        // console output for debugging
+        console.log("catched id: " + id);
+        console.log("translated id: " + nameC);
+        console.log(userData);
+        console.log(getImagePath())
+
+        //passing variables to html
+        document.getElementById("name1").innerHTML=userData["name"];
+        document.getElementById("name2").innerHTML=userData["surname"];
+        document.getElementById("age").innerHTML=userData["age"];
+        document.getElementById("status").innerHTML=userData["status"];
+        document.getElementById("slavery").innerHTML=userData["slavery"];
+        document.getElementById("special").innerHTML=userData["special"];
+        document.getElementById("level").innerHTML=userData["level"];
+    </script>
+    </body>
+</html>
