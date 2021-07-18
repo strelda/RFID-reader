@@ -1,25 +1,4 @@
-function goToUser(val) {
-    if (event.keyCode === 13) {
-        window.location.href="user.html";
-        handleSubmit();
-    }
-};
-function handleSubmit () {
-    const name = document.getElementById('name').value;
-  
-    sessionStorage.setItem("NAME", name);
-
-    return;
-};
-
-// id to name translator
-const dict = {
-    "eer": "OndraTalir"
-};
-
-
-// all user info
-const users = {
+{
     "undefined":{
         "name": "INTRUDER",
         "surname": "INTRUDER",
@@ -38,4 +17,4 @@ const users = {
         "special": "Umí péct líp jak tvoje mamka.",
         "level": 2
     }
-};
+}
