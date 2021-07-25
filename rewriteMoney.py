@@ -31,5 +31,11 @@ while i<nu:
     else:
         i-=1
 
-with open('functions.js', 'w') as file:
-    file.writelines( data )
+
+print('n')
+for q in ["napiš 'ano', pokud si přeješ zapsat změny", "fakt ne? Máš druhou možnost napsat 'ano', jestli sis to rozmyslel"]:
+    print(q)
+    ready = input()
+    if ready=='ano':
+        with open('functions.js', 'w') as file:
+            file.writelines( data )

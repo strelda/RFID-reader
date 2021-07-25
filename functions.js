@@ -24,7 +24,7 @@ const users = {
         "name": "INTRUDER",
         "surname": "INTRUDER",
         "age": 0,
-        "status": 11,
+        "status": 1,
         "slavery": "",
         "special": "Volám na tě policii ty plesnivče",
         "level": 0
@@ -33,7 +33,7 @@ const users = {
         "name": "Ondra",
         "surname": "Talíř",
         "age":25,
-        "status": 123,
+        "status": 2,
         "slavery": "21.7 OBĚD, 25.7 SNÍDANĚ",
         "special": "Umí péct líp jak tvoje mamka.",
         "level": 2
@@ -42,7 +42,7 @@ const users = {
         "name": "Ondra",
         "surname": "Talíř",
         "age":25,
-        "status": -11,
+        "status": 3,
         "slavery": "21.7 OBĚD, 25.7 SNÍDANĚ",
         "special": "Umí péct líp jak tvoje mamka.",
         "level": 2
@@ -51,7 +51,7 @@ const users = {
         "name": "Ondra",
         "surname": "Talíř",
         "age":25,
-        "status": 1123,
+        "status": 4,
         "slavery": "21.7 OBĚD, 25.7 SNÍDANĚ",
         "special": "Umí péct líp jak tvoje mamka.",
         "level": 2
